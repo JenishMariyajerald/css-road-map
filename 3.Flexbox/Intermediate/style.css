@@ -32,14 +32,14 @@
     white-space: nowrap;
 }
 
-.toggle .a {
+/* .toggle .a {
     font-size: 20px;
 }
 
 .toggle {
     order: 1;
     color: #fff;
-}
+} */
 
 .item {
     width: 100%;
@@ -70,7 +70,7 @@
     color: #fff;
 }
 
-@media all and (max-width: 768px) {
+/* @media all and (max-width: 768px) {
     .ul {
         justify-content: center;
     }
@@ -114,4 +114,4 @@
 
 .toggle a i {
     color: white;
-}
+} */
