@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Courgette&family=Pacifico&family=Sassy+Frass&family=Yatra+One&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+h2 {
+    font-size: 40px;
+    font-weight: 300;
+    color: #35312b;
+    text-shadow: 0.3px 0.3px 2px Sienna;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    text-decoration: 1px dashed underline #888;
+    letter-spacing: 2px;
+    font-size: 30px;
+    font-weight: 300;
+    font-style: italic;
+    color: #35312b;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-shadow: 0.6px 0.6px 1px Sienna;
+}
+
+#mrs {
+    font-family: 'Sassy Frass', cursive;
+    font-size: 600%;
+    font-weight: 1;
+    opacity: 0.8;
+    letter-spacing: 5px;
+    font-size: 50px;
+}
+
+#ohh {
+    font-family: 'Abril Fatface', cursive;
+
+}
+
+#question {
+    font-family: 'Yatra One', cursive;
+    font-weight: bold;
+}
+
+.p {
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-size: x-large;
+    font-family: 'Courgette', cursive;
+
+}
+
+body {
+
+    background: #ac7676;
+}
+
+.book-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.book-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}

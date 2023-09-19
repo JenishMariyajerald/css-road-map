@@ -94,111 +94,86 @@
     padding-top: 5%;
 }
 
-#p1:hover {
-    color: aquamarine;
-}
-
 #a:hover {
     font-weight: 600;
 }
 
-/* Mobile View */
-@media (max-width: 480px) {
-    .navbar {
-        height: auto;
-        text-align: center;
+#menu {
+    display: none;
+}
+
+
+#menu a i {
+    color: #000;
+}
+
+
+#closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+.menu-drawer {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    /* Initially hidden to the right */
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    z-index: 2;
+    overflow-y: auto;
+}
+
+.menu-drawer ul {
+    list-style-type: none;
+    padding: 20px;
+}
+
+.menu-drawer li {
+    margin-bottom: 15px;
+}
+
+.menu-drawer a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar #li {
+        display: none;
     }
 
-    .navbar .logo {
-        font-size: x-large;
-        margin-bottom: 20px;
-    }
-
-    #ul {
-        flex-direction: column;
-    }
-
-    .navbar #ul #li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    #header {
-        padding-top: 30%;
-    }
-
-    #p1 {
-        font-size: medium;
-        margin-top: 10px;
-    }
-
-    #p2 {
-        font-size: medium;
-    }
-
-    #button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    #text-button {
-        padding: 8px 30px;
-        font-size: 16px;
-    }
-
-    .button-container {
-        padding-top: 10%;
+    #menu {
+        display: block;
     }
 }
 
-/* Tablet View */
-
-@media (max-width: 768px) {
-    #body {
-        font-size: 14px;
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+    .navbar #li {
+        display: none;
     }
 
-    .navbar {
-        height: 70px;
+    #menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .navbar #li {
+        display: none;
     }
 
-    .navbar .logo {
-        font-size: x-large;
-    }
-
-    #ul {
-        flex-direction: column;
-    }
-
-    .navbar #ul #li {
-        margin-left: 0;
-        margin-bottom: 10px;
-    }
-
-    #header {
-        padding-top: 20%;
-    }
-
-    #p1 {
-        font-size: large;
-        margin-top: 10px;
-    }
-
-    #p2 {
-        font-size: large;
-    }
-
-    #button {
-        padding: 8px 16px;
-        font-size: 14px;
-    }
-
-    #text-button {
-        padding: 8px 40px;
-        font-size: 16px;
-    }
-
-    .button-container {
-        padding-top: 10%;
+    #menu {
+        display: block;
     }
 }

@@ -3,3 +3,144 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    overflow-x: hidden;
+}
+
+.count {
+    font-size: 30px;
+}
+
+.font-serif {
+    font-family: 'Source Serif Pro', serif;
+}
+
+.bg-blue {
+    color: steelblue;
+}
+
+.page-number {
+    bottom: 0;
+    left: 25px;
+    position: absolute;
+}
+
+.page-line {
+    position: absolute;
+    bottom: 10px;
+    width: 10px;
+}
+
+
+.article-red {
+    color: #FF4A46;
+}
+
+.container {
+    padding: 25px;
+}
+
+.f8 {
+    font-size: .65rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: .75rem;
+    grid-auto-rows: 55px;
+    margin: 100px auto;
+    border-top: 1px solid #000;
+    max-width: 950px;
+
+}
+
+.folio-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+}
+
+.folio-2 {
+    grid-row-start: 1;
+    grid-column-start: 2;
+    grid-column-end: span 3;
+}
+
+.folio-3 {
+    grid-column-start: 5;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+}
+
+.folio-4 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 1;
+}
+
+.headeline {
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    font-size: x-large;
+    align-self: center;
+    text-align: center;
+}
+
+.image {
+    grid-column-start: 1;
+    grid-column-end: span all;
+    grid-row-start: 4;
+    grid-row-end: 9;
+    background: url('./Images/news.png');
+    background-position: left;
+    background-size: 1000px;
+}
+
+.image2 {
+    height: auto;
+    width: auto;
+    grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 20;
+    grid-row-end: 26;
+    background: url('./Images/news2.jpeg');
+
+}
+
+.article-intro {
+    grid-row-start: 11;
+    grid-row-end: 12;
+    grid-column-start: 1;
+    grid-column-end: span 8;
+}
+
+.caption {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 9;
+    grid-row-end: 12;
+    margin-right: -13px;
+}
+
+.infographic {
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    grid-row-start: 20;
+}
+
+.copy-1 {
+    grid-column-start: 1;
+    grid-column-end: span 8;
+    grid-row-start: 15;
+}
+
+.copy-2 {
+    grid-column-start: 1;
+    grid-column-end: 8;
+    grid-row-start: 27;
+    grid-row-end: 34;
+}
