@@ -1,3 +1,16 @@
+// using variables
+$text-color: #fff;
+$navbar-bg-color:#dfdfdf;
+$navbar-menu-text-color:#000;
+$body-and-button-font-size:16px;
+$menu-and-text-button-font-size:18px;
+$close-icon-size:24px;
+$navbar-list-font-size:20px;
+$extra-large-font-size:x-large;
+$double-extra-large-font-size:xx-large;
+$navbar-and-menu-font-weight:500;
+$navbar-hover-font-weight:600;
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,10 +18,10 @@
 }
 
 #body {
-    font-size: 16px;
+    font-size: $body-and-button-font-size;
     line-height: 1.5;
-    background: #fff;
-    color: #fff;
+    background:$text-color;
+    color:$text-color;
     background-image: url('./images//labour.jpg');
 }
 
@@ -23,21 +36,21 @@
 }
 
 .navbar {
-    background: #dfdfdf;
-    color: #000000;
+    background:$navbar-bg-color;
+    color:$navbar-menu-text-color;
     height: 90px;
 }
 
 .navbar .logo {
-    font-size: xx-large;
-    font-weight: 500;
+    font-size: $double-extra-large-font-size;
+    font-weight: $navbar-and-menu-font-weight;
 }
 
 #a {
-    color: #000;
+    color:$navbar-menu-text-color;
     text-decoration: none;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: $navbar-bg-color;
+    font-weight: $navbar-and-menu-font-weight;
 }
 
 .navbar .container {
@@ -63,31 +76,31 @@
 }
 
 #p1 {
-    font-size: x-large;
+    font-size:$extra-large-font-size;
     margin-top: 20px;
 }
 
 #p2 {
-    font-size: x-large;
+    font-size: $extra-large-font-size;
 }
 
 
 #button {
     padding: 10px 20px;
-    font-size: 16px;
-    border: 2px solid #fff;
+    font-size: $body-and-button-font-size;
+    border: 2px solid $text-color;
     background-color: transparent;
     border-radius: 20px;
     cursor: pointer;
-    color: #fff;
+    color:$text-color;
 }
 
 #text-button {
     padding: 10px 60px;
-    font-size: 18px;
+    font-size: $menu-and-text-button-font-size;
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color:$text-color;
 }
 
 .button-container {
@@ -95,7 +108,7 @@
 }
 
 #a:hover {
-    font-weight: 600;
+    font-weight: $navbar-hover-font-weight;
 }
 
 #menu {
@@ -104,7 +117,7 @@
 
 
 #menu a i {
-    color: #000;
+    color:$navbar-menu-text-color;
 }
 
 
@@ -112,9 +125,9 @@
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 24px;
+    font-size: $close-icon-size;
     cursor: pointer;
-    color: #000;
+    color:$navbar-menu-text-color;
 }
 
 .menu-drawer {
@@ -123,7 +136,7 @@
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #fff;
+    background-color:$navbar-bg-color;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
     z-index: 2;
@@ -141,9 +154,9 @@
 
 .menu-drawer a {
     text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
+    color: $navbar-menu-text-color;
+    font-size: $menu-and-text-button-font-size;
+    font-weight: $navbar-and-menu-font-weight;
 }
 
 @media screen and (max-width: 768px) {
