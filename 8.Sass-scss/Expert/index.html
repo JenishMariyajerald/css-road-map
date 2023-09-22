@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Selectors & Basic Styling</title>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">Hyer</div>
+        <ul id="ul">
+          <li id="li">
+            <a id="a" href="#">About</a>
+          </li>
+          <li id="li">
+            <a id="a" href="#">Community</a>
+          </li>
+          <li id="li">
+            <a id="a" href="#">Media</a>
+          </li>
+          <li id="li">
+            <a id="a" href="#">Blog</a>
+          </li>
+          <li id="li">
+            <a id="a" href="#">Contact</a>
+          </li>
+          <li id="li">
+            <button id="darkModeToggle">Dark Mode</button>
+          </li>
+          <button onclick=" menu_open()" id="menu">
+            <li>
+              <a href="#"><i class="fas fa-bars"></i></a>
+            </li>
+          </button>
+        </ul>
+      </div>
+    </nav>
+    <div id="menuDrawer" class="menu-drawer">
+      <i id="closeIcon" class="fas fa-times"></i>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <header id="header">
+      <div class="container">
+        <h1>Real-Time Help is Here.</h1>
+        <p id="p1">Delivering on-demand with the tap of an app.</p>
+        <p id="p2">
+          Hyer is a simple, straightforward app that connects businesses to
+          on-demand labor and individuals to immediate work in real-time. It’s a
+          two-way street that works for everyone. For a better way to work—and a
+          better way to live.
+        </p>
+        <div class="button-container">
+          <button id="button">Change Theme</button>
+          <a href="#" id="text-button">Book Demo &nbsp ></a>
+        </div>
+      </div>
+    </header>
+    <script>
+      function toggleDrawer() {
+        var menuDrawer = document.getElementById("menuDrawer");
+        menuDrawer.style.right =
+          menuDrawer.style.right === "0px" ? "-300px" : "0px";
+      }
+
+      function menu_open() {
+        toggleDrawer();
+      }
+
+      document
+        .getElementById("closeIcon")
+        .addEventListener("click", toggleDrawer);
+
+
+let currentTheme = 'light';
+
+// Function to toggle the theme
+function toggleTheme() {
+  const body = document.body;
+
+  if (currentTheme === 'light') {
+    body.classList.remove('light-theme');
+    body.classList.add('dark-theme');
+    currentTheme = 'dark';
+  } else {
+    body.classList.remove('dark-theme');
+    body.classList.add('light-theme');
+    currentTheme = 'light';
+  }
+}
+
+const darkModeToggle = document.getElementById('darkModeToggle');
+darkModeToggle.addEventListener('click', toggleTheme);
+
+
+        // 
+    </script>
+  </body>
+</html>
