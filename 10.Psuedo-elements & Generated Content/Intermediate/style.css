@@ -1,0 +1,67 @@
+/* A CSS pseudo-element is used to style specified parts of an element. */
+/* ::first-line pseudo-element is used to add a special style to the first line of a text */
+/* ::first-letter pseudo-element is used to add a special style to the first letter of a text. */
+/* ::before pseudo-element can be used to insert some content before the content of an element. */
+/* ::after pseudo-element can be used to insert some content after the content of an element. */
+/* ::marker pseudo-element selects the markers of list items. */
+/* ::selection pseudo-element matches the portion of an element that is selected by a user */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+}
+
+.user::before {
+    display: inline-block;
+    margin-top: 10px;
+    font: var(--fa-font-solid);
+    content: "\f2b9";
+    font-size: large;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.like::after {
+    display: inline-block;
+    margin-top: 10px;
+    font: var(--fa-font-solid);
+    content: "\f164";
+    text-rendering: auto;
+    font-size: x-large;
+    -webkit-font-smoothing: antialiased;
+}
+
+.game::after {
+    display: inline-block;
+    margin-top: 10px;
+    font: var(--fa-font-solid);
+    content: "\f1e3";
+    text-rendering: auto;
+    color: blue;
+    font-size: x-large;
+    -webkit-font-smoothing: antialiased;
+}
+
+.rating::after {
+    display: inline-block;
+    margin-top: 10px;
+    font: var(--fa-font-solid);
+    content: "\f005";
+    text-rendering: auto;
+    color: rgb(99, 99, 15);
+    font-size: x-large;
+    -webkit-font-smoothing: antialiased;
+}

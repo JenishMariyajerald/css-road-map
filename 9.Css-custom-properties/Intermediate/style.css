@@ -1,14 +1,20 @@
+/* Custom properties are entites defined by css author that contain specific values to be reused throughout the document */
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+:root {
+    --content-color: #fff;
+    --primary-color: #000;
+}
+
 #body {
     font-size: 16px;
     line-height: 1.5;
-    background: #fff;
-    color: #fff;
+    color: var(--content-color);
     background-image: url('./images//labour.jpg');
 }
 
@@ -24,7 +30,7 @@
 
 .navbar {
     background: #dfdfdf;
-    color: #000000;
+    color: var(--primary-color);
     height: 90px;
 }
 
@@ -34,7 +40,7 @@
 }
 
 #a {
-    color: #000;
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
@@ -75,11 +81,11 @@
 #button {
     padding: 10px 20px;
     font-size: 16px;
-    border: 2px solid #fff;
+    border: 2px solid var(--content-color);
     background-color: transparent;
     border-radius: 20px;
     cursor: pointer;
-    color: #fff;
+    color: var(--content-color);
 }
 
 #text-button {
@@ -87,7 +93,7 @@
     font-size: 18px;
     text-decoration: none;
     cursor: pointer;
-    color: #fff;
+    color: var(--content-color);
 }
 
 .button-container {
@@ -104,7 +110,7 @@
 
 
 #menu a i {
-    color: #000;
+    color: var(--primary-color);
 }
 
 
@@ -114,7 +120,7 @@
     right: 10px;
     font-size: 24px;
     cursor: pointer;
-    color: #000;
+    color: var(--primary-color);
 }
 
 .menu-drawer {
@@ -123,7 +129,7 @@
     right: -300px;
     width: 300px;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--content-color);
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
     transition: right 0.3s ease-in-out;
     z-index: 2;
@@ -141,7 +147,7 @@
 
 .menu-drawer a {
     text-decoration: none;
-    color: #000;
+    color: var(--primary-color);
     font-size: 18px;
     font-weight: 500;
 }

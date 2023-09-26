@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Theme Switch</title>
+  </head>
+  <body>
+    <form 
+    class="color-picker"
+    action="">
+        <fieldset>
+            <!-- <legend>Pick a color scheme</legend> -->
+            <!-- <legend> -->
+                <label for="theme">Light&nbsp;&nbsp;</label>
+                <input  type="radio" name="theme" id="light" checked>
+
+                <label for="theme">&nbsp;&nbsp;Pink Theme&nbsp;&nbsp;</label>
+                <input  type="radio" name="theme" id="pink" checked>
+
+                <label for="theme">&nbsp;&nbsp;Blue Theme&nbsp;&nbsp;</label>
+                <input  type="radio" name="theme" id="blue" checked>
+
+                <label for="theme">&nbsp;&nbsp;Green Them&nbsp;&nbsp;</label>
+                <input  type="radio" name="theme" id="green" checked>
+
+                <label for="theme">&nbsp;&nbsp;Dark Theme&nbsp;&nbsp;</label>
+                <input  type="radio" name="theme" id="dark" checked>
+            <!-- </legend> -->
+        </fieldset>
+    </form>
+    <main>
+    <div class="container">
+      <div style="padding: 50px">
+        <h1>Css Custom Properties</h1>
+        <div class="text-content">
+          <p>
+            Custom properties (sometimes referred to as CSS variables or
+            cascading variables) are entities defined by CSS authors that
+            contain specific values to be reused throughout a document. They are
+            set using custom property notation (e.g., --main-color: black;) and
+            are accessed using the var() function (e.g., color:
+            var(--main-color);). Complex websites have very large amounts of
+            CSS, often with a lot of repeated values. For example, the same
+            color might be used in hundreds of different places, requiring
+            global search and replace if that color needs to change. Custom
+            properties allow a value to be stored in one place, then referenced
+            in multiple other places. An additional benefit is semantic
+            identifiers. For example, --main-text-color is easier to understand
+            than #00ff00, especially if this same color is also used in other
+            contexts.
+          </p>
+          <br />
+          <p>
+            Variables do not work inside media queries and container queries.
+            The var() function can be used in place of any part of a value in
+            any property on an element. The var() function cannot be used as
+            property names, selectors, or anything else besides property values.
+            So, we can't use it in a media query or container query.
+          </p>
+        </div>
+
+        <div class="sub-container">
+          <h2>Basic Usage</h2>
+          <div class="text-content">
+            <p>
+              Declaring a custom property is done using a custom property name
+              that begins with a double hyphen (--), and a property value that
+              can be any valid CSS value. Like any other property, this is
+              written inside a ruleset, like so:
+            </p>
+          </div>
+          <div class="div">
+            <div class="block">
+              <div class="block-content">
+                <br />
+                <h6>Small Title</h6>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Magnam cum, eum iste doloremque commodi incidunt nihil
+                  reprehenderit tempore consequatur! Ab debitis soluta qui iure
+                  repellendus dolore nihil officiis nostrum quaerat!
+                </p>
+                <br />
+              </div>
+            </div>
+            <div class="block">
+              <div class="block-content">
+                <br />
+                <h3>Medium Title</h3>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Velit, dolor cumque voluptatibus eaque facere numquam
+                  voluptate voluptatem quo itaque enim praesentium dolorem,
+                  ducimus amet optio nulla? Sunt expedita eius eveniet?
+                </p>
+                <br />
+              </div>
+            </div>
+
+            <div class="block">
+              <div class="block-content">
+                <br />
+                <h1>Large Title</h1>
+                <br />
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio,
+                  ullam animi optio nam rerum eos officia consequatur quae
+                  voluptates placeat incidunt! Fugit ad nobis amet voluptatum.
+                  Libero vero consequatur illo.
+                </p>
+                <br />
+              </div>
+            </div>
+          </div>
+          <div class="sub-container">
+            <h2>Using the :root pseudo-class</h2>
+            <div class="text-content">
+              <p>
+                Notice the repetitive CSS in the example above. The background
+                color is set to brown in several places. For some CSS
+                declarations, it is possible to declare this higher in the
+                cascade and let CSS inheritance solve this problem naturally.
+                For non-trivial projects, this is not always possible. By
+                declaring a custom property on the :root pseudo-class and using
+                it where needed throughout the document, a CSS author can reduce
+                the need for repetition:
+              </p>
+              <br />
+              <p>
+                This leads to the same result as the previous example, yet
+                allows for one canonical declaration of the desired property
+                value; very useful if you want to change the value across the
+                entire page later.
+              </p>
+            </div>
+          </div>
+          <div class="sub-container">
+            <h2>Inheritance of custom properties</h2>
+            <div class="text-content">
+              <p>
+                Custom properties do inherit. This means that if no value is set
+                for a custom property on a given element, the value of its
+                parent is used. Take this HTML:
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</main>
+  </body>
+</html>

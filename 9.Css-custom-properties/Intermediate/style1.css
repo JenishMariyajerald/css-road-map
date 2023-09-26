@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-color: #0a0808;
+    --block-content-color: #146cf1;
+}
+
+.div {
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+h1,
+h2,
+h3,
+h6 {
+    color: var(--header-color);
+}
+
+.block {
+    border: 1px solid #000;
+}
+
+.block-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 90%;
+    justify-content: center;
+}
+
+.block-content p {
+    color: var(--block-content-color);
+}
+
+.text-content {
+    margin-top: 20px
+}
+
+.sub-container {
+    margin-top: 30px
+}
